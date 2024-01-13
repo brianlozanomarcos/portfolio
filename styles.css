@@ -6,10 +6,36 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-image: url('ruta/de/tu/imagen.jpg'); /* Agrega la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
     color: #fff;
     text-align: center;
-    padding: 2rem;
+    padding: 4rem 0; /* Aumenta el espacio superior e inferior */
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px; /* Ajusta el radio según tu preferencia */
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555; /* Color de fondo al pasar el ratón */
 }
 
 section {
@@ -20,4 +46,3 @@ h2 {
     color: #333;
 }
 
-/* Personaliza el estilo según tus preferencias */
