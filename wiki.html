@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Wiki</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        nav {
+            width: 250px;
+            background-color: #005fa3;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #007acc;
+        }
+        main {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            box-sizing: border-box;
+        }
+        .section {
+            display: none;
+        }
+        .section:target {
+            display: block;
+        }
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#tema1">Tema 1</a>
+        <a href="#tema2">Tema 2</a>
+        <a href="#tema3">Tema 3</a>
+        <a href="#tema4">Tema 4</a>
+    </nav>
+    <main>
+        <header>
+            <h1>Mi Wiki</h1>
+        </header>
+        <div id="tema1" class="section">
+            <h2>Tema 1</h2>
+            <p>Contenido del tema 1. Aquí puedes añadir cualquier información relevante para este tema.</p>
+        </div>
+        <div id="tema2" class="section">
+            <h2>Tema 2</h2>
+            <p>Contenido del tema 2. Aquí puedes añadir cualquier información relevante para este tema.</p>
+        </div>
+        <div id="tema3" class="section">
+            <h2>Tema 3</h2>
+            <p>Contenido del tema 3. Aquí puedes añadir cualquier información relevante para este tema.</p>
+        </div>
+        <div id="tema4" class="section">
+            <h2>Tema 4</h2>
+            <p>Contenido del tema 4. Aquí puedes añadir cualquier información relevante para este tema.</p>
+        </div>
+    </main>
+</body>
+</html>
