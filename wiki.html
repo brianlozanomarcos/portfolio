@@ -36,8 +36,23 @@
         nav .folder {
             margin-top: 20px;
         }
-        nav .folder a {
+        nav .folder .subtopics {
+            display: none;
             margin-left: 15px;
+        }
+        nav .folder button {
+            background: none;
+            border: none;
+            color: #0645ad;
+            cursor: pointer;
+            padding: 0;
+            font-size: 16px;
+            text-align: left;
+            margin: 10px 0;
+            display: block;
+        }
+        nav .folder button:hover {
+            text-decoration: underline;
         }
         main {
             flex-grow: 1;
@@ -82,14 +97,18 @@
         <a href="#tema1">Tema 1</a>
         <a href="#tema2">Tema 2</a>
         <div class="folder">
-            <a href="#">Tema 3</a>
-            <a href="#subtema3-1">Subtema 3.1</a>
-            <a href="#subtema3-2">Subtema 3.2</a>
+            <button onclick="toggleFolder('folder1')">Tema 3</button>
+            <div id="folder1" class="subtopics">
+                <a href="#subtema3-1">Subtema 3.1</a>
+                <a href="#subtema3-2">Subtema 3.2</a>
+            </div>
         </div>
         <div class="folder">
-            <a href="#">Tema 4</a>
-            <a href="#subtema4-1">Subtema 4.1</a>
-            <a href="#subtema4-2">Subtema 4.2</a>
+            <button onclick="toggleFolder('folder2')">Tema 4</button>
+            <div id="folder2" class="subtopics">
+                <a href="#subtema4-1">Subtema 4.1</a>
+                <a href="#subtema4-2">Subtema 4.2</a>
+            </div>
         </div>
     </nav>
     <main>
@@ -122,5 +141,15 @@
             <p>Contenido del subtema 4.2. Aquí puedes añadir cualquier información relevante para este subtema.</p>
         </div>
     </main>
+    <script>
+        function toggleFolder(folderId) {
+            var folder = document.getElementById(folderId);
+            if (folder.style.display === "none" || folder.style.display === "") {
+                folder.style.display = "block";
+            } else {
+                folder.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
