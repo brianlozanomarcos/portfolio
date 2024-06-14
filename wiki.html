@@ -125,7 +125,7 @@
             <p>Contenido del tema 2. Aquí puedes añadir cualquier información relevante para este tema.</p>
         </div>
         <div id="subtema3-1" class="section">
-            <h2>Subtema 3.1</h2>
+            <h2>Docker</h2>
             <p></p> Una herramienta con la que trabajar con contenedores y no vm.</p>
             Contenedor= Forma de virtualizacion de un sistema operativo app.</p>
             </p>
@@ -135,8 +135,20 @@
             
         </div>
         <div id="subtema3-2" class="section">
-            <h2>Subtema 3.2</h2>
-            <p>Contenido del subtema 3.2. Aquí puedes añadir cualquier información relevante para este subtema.</p>
+            <h2>Contenedores</h2>
+            <p> Algunos contenedores utiles.</p>
+            </p>
+            <u>Portainer</u></p>
+            Contenedor para administrar los contenedores docker con un entorno grafico y sencillo, via web.</p>
+            </p>
+            <u>Instalación</u></p>
+            <pre><code> docker volume create portainer_data</code></pre></p>
+            Esto creará un volumen persistente.</p>
+            </p>
+            <pre><code> docker run -d -p 9000:9000 --name=Portainer --restart=always -v /var/run/docker.sock -v portainer_data:/data portainer/portainer</code></pre></p>
+            
+            
+            
         </div>
         <div id="subtema4-1" class="section">
             <h2>Subtema 4.1</h2>
