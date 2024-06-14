@@ -15,7 +15,7 @@
             color: #333;
         }
         nav {
-            width: 200px;
+            width: 250px;
             background-color: #f8f9fa;
             padding: 20px;
             box-sizing: border-box;
@@ -32,6 +32,12 @@
         }
         nav a:hover {
             background-color: #e9ecef;
+        }
+        nav .folder {
+            margin-top: 20px;
+        }
+        nav .folder a {
+            margin-left: 15px;
         }
         main {
             flex-grow: 1;
@@ -50,6 +56,20 @@
             color: #333;
             padding: 10px 20px;
             border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .back-button {
+            background-color: #f8f9fa;
+            color: #0645ad;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: underline;
         }
         h1, h2 {
             font-family: 'Georgia', serif;
@@ -61,12 +81,21 @@
     <nav>
         <a href="#tema1">Tema 1</a>
         <a href="#tema2">Tema 2</a>
-        <a href="#tema3">Tema 3</a>
-        <a href="#tema4">Tema 4</a>
+        <div class="folder">
+            <a href="#">Tema 3</a>
+            <a href="#subtema3-1">Subtema 3.1</a>
+            <a href="#subtema3-2">Subtema 3.2</a>
+        </div>
+        <div class="folder">
+            <a href="#">Tema 4</a>
+            <a href="#subtema4-1">Subtema 4.1</a>
+            <a href="#subtema4-2">Subtema 4.2</a>
+        </div>
     </nav>
     <main>
         <header>
             <h1>Mi Wiki</h1>
+            <button class="back-button" onclick="location.href='index.html'">Volver al índice</button>
         </header>
         <div id="tema1" class="section">
             <h2>Tema 1</h2>
@@ -76,13 +105,21 @@
             <h2>Tema 2</h2>
             <p>Contenido del tema 2. Aquí puedes añadir cualquier información relevante para este tema.</p>
         </div>
-        <div id="tema3" class="section">
-            <h2>Tema 3</h2>
-            <p>Contenido del tema 3. Aquí puedes añadir cualquier información relevante para este tema.</p>
+        <div id="subtema3-1" class="section">
+            <h2>Subtema 3.1</h2>
+            <p>Contenido del subtema 3.1. Aquí puedes añadir cualquier información relevante para este subtema.</p>
         </div>
-        <div id="tema4" class="section">
-            <h2>Tema 4</h2>
-            <p>Contenido del tema 4. Aquí puedes añadir cualquier información relevante para este tema.</p>
+        <div id="subtema3-2" class="section">
+            <h2>Subtema 3.2</h2>
+            <p>Contenido del subtema 3.2. Aquí puedes añadir cualquier información relevante para este subtema.</p>
+        </div>
+        <div id="subtema4-1" class="section">
+            <h2>Subtema 4.1</h2>
+            <p>Contenido del subtema 4.1. Aquí puedes añadir cualquier información relevante para este subtema.</p>
+        </div>
+        <div id="subtema4-2" class="section">
+            <h2>Subtema 4.2</h2>
+            <p>Contenido del subtema 4.2. Aquí puedes añadir cualquier información relevante para este subtema.</p>
         </div>
     </main>
 </body>
