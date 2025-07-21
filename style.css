@@ -131,7 +131,7 @@ kbd {
 	background-color: #ddd;
 	padding: 4px 6px;
 	border-radius: 2px;
-	color: ;
+	color: ddd;
 }
 
 address {
@@ -896,7 +896,26 @@ button:focus {
 .mu-testimonial-slide .slick-dots li button::before {
 	display: none;
 }
+.testimonial-clave {
+  background-image: url('assets/images/clave-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
 
+.testimonial-tecnofix {
+  background-image: url('assets/images/tecnofix-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.testimonial-gtt {
+  background-image: url('assets/images/gtt-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
 
 /*--------------------*/
 /* CONTACT US */
