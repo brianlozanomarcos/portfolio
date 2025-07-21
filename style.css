@@ -828,8 +828,14 @@ button:focus {
 }
 
 .mu-testimonial-slide li{
-	list-style: none;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px; /* o el alto que necesites */
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .mu-testimonial-slide li.slick-slide {
@@ -897,6 +903,8 @@ button:focus {
 	display: none;
 }
 .testimonial-clave {
+  position: relative;
+  z-index: 1;
   background-color: #2a2a2a;
   background-size: cover;
   background-position: center;
@@ -904,6 +912,8 @@ button:focus {
 }
 
 .testimonial-tecnofix {
+  position: relative;
+  z-index: 1;
   background-color: #2a2a2a;
   background-size: cover;
   background-position: center;
@@ -911,6 +921,8 @@ button:focus {
 }
 
 .testimonial-gtt {
+  position: relative;
+  z-index: 1;
   background-color: #2a2a2a;
   background-size: cover;
   background-position: center;
