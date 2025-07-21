@@ -897,21 +897,21 @@ button:focus {
 	display: none;
 }
 .testimonial-clave {
-  background-image: url('assets/images/clave-bg.jpg');
+  background-color: #2a2a2a;
   background-size: cover;
   background-position: center;
   color: white;
 }
 
 .testimonial-tecnofix {
-  background-image: url('assets/images/tecnofix-bg.jpg');
+  background-color: #2a2a2a;
   background-size: cover;
   background-position: center;
   color: white;
 }
 
 .testimonial-gtt {
-  background-image: url('assets/images/gtt-bg.jpg');
+  background-color: #2a2a2a;
   background-size: cover;
   background-position: center;
   color: white;
